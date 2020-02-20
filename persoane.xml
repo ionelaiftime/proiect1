@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE persoane SYSTEM "persoane.dtd">
 <persoane>
     <persoana id="1">
         <nume>Popescu</nume>
@@ -12,34 +13,34 @@
             <localitate>Iasi</localitate>
             <judet>Iasi</judet>
             <tara>Romania</tara>
-        </adresa>>
+        </adresa>
     </persoana>
     <persoana id="2">
-            <nume>Tiron</nume>
-            <prenume>Maria</prenume>
-            <varsta>21</varsta>
-            <telefon>0758375731</telefon>
-            <email>tironmaria@gmail.com</email>
-            <adresa>
-                <strada>Marului</strada>
-                <numar>345</numar>
-                <localitate>Tansa</localitate>
-                <judet>Iasi</judet>
-                <tara>Romania</tara>
-            </adresa>>
-        </persoana>
-        <persoana id="3">
-                <nume>Vamanu</nume>
-                <prenume>Andreea</prenume>
-                <varsta>30</varsta>
-                <telefon>0734928473</telefon>
-                <email>vamanuandreea@gmail.com</email>
-                <adresa>
-                    <strada>Libertatii</strada>
-                    <numar>45</numar>
-                    <localitate>Crangu</localitate>
-                    <judet>Pascani</judet>
-                    <tara>Romania</tara>
-                </adresa>>
-            </persoana>
+        <nume>Tiron</nume>
+        <prenume>Maria</prenume>
+        <varsta>21</varsta>
+        <telefon>0758375731</telefon>
+        <email>tironmaria@gmail.com</email>
+        <adresa>
+            <strada>Marului</strada>
+            <numar>345</numar>
+            <localitate>Tansa</localitate>
+            <judet>Iasi</judet>
+            <tara>Romania</tara>
+        </adresa>
+    </persoana>
+    <persoana id="3">
+        <nume>Vamanu</nume>
+        <prenume>Andreea</prenume>
+        <varsta>30</varsta>
+        <telefon>0734928473</telefon>
+        <email>vamanuandreea@gmail.com</email>
+        <adresa>
+            <strada>Libertatii</strada>
+            <numar>45</numar>
+            <localitate>Crangu</localitate>
+            <judet>Pascani</judet>
+            <tara>Romania</tara>
+        </adresa>
+    </persoana>
 </persoane>
