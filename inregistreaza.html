@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Despre HTML</title>
+<meta charset="utf-8"/>
+</head>
+<body>
+<header>
+<h1><div align="center"><img src="https://cdn1.iconfinder.com/data/icons/web-development-2-9/48/83-512.png" alt="img" width="150" height="150">Programare web
+</div></h1>
+</header>
+
+<nav>
+    <div align="center">
+  <a href="index.html">Acasa</a> |
+  <a href="inregistreaza.html">Inregistrare</a> |
+  <a href="video.html">Video</a> |
+  <a href="despre_html.html">Despre</a>
+  </div>
+</nav>
+
+
+<h1>Inregistreaza-te</h1>
+
+
+ <fieldset>
+  <legend>Informatii generale</legend>
+  <label for="inf">Nume Utilizator:</label><br>
+  <input type="text"><br><br>
+  <label for="parola">Parola:</label><br>
+  <input type="password"><br><br>
+  <label for="nume">Nume:</label><br>
+  <input type="text" ><br><br>
+  <label for="prenume">Prenume:</label><br>
+  <input type="text" ><br><br>
+  <label for="email">Email:</label><br>
+  <input type="email" ><br><br>
+  <label for="telefon">Telefon:</label><br>
+  <input type="tel"><br><br>
+ </fieldset>
+ <br>
+ <fieldset>
+ <legend>Informatii personale</legend><br>
+ 
+ <label>Sexul:</label>
+ <select>
+  <option value="fem">Feminin</option>
+  <option value="masc">Masculin</option>
+ </select>
+ <br><br>
+ <label>Mancare preferata:</label><br>
+ <input list="mancare">
+  <datalist id="mancare">
+    <option value="Salata">
+    <option value="Burger">
+    <option value="Cartofi prajiti">
+    <option value="Ciorba">
+    <option value="Sarmale">
+  </datalist>
+ <br><br> 
+ 
+ <label for="culoare preferata">Culoarea preferata:</label><br>
+ <input type="color" id="culoare preferata">
+ <br><br>
+ <label for="data">Data Nasterii:</label><br>
+ <input type="date" id="data">
+ <br><br>
+ <label for="time">Ora Nasterii:</label><br>
+ <input type="time">
+ <br><br>
+  <label for="varsta">Varsta :</label><br>
+  <input type="range" list="varsta" min="0" max="100">
+ <br><br>
+ <label for="pagina personala">Pagina Personala:</label><br>
+ <input type="url" id="pagina personala" name="pagina personala"><br><br>
+ <label for="desc">Descriere Personala:</label><br>
+ <textarea id="desc" rows="3" cols="25">
+</textarea>
+</fieldset>
+ <br><br>
+<button type="button" disabled>Inregistreaza</button>
+ <footer>
+        <p>&#9400;. 2020.Programare web</p>
+</footer>    
+</body>
+</html>     
