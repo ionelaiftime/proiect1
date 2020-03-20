@@ -59,3 +59,30 @@ function versiunebrowser() {
     
     document.getElementById("os").innerHTML = OSName;
   }  
+
+
+  function loto()
+{
+    var numere = "Numerele castigatoare: ";
+    var map = new Map();
+    for(var i = 0;i < 8; ++i)
+    {
+        var numar = Math.floor(Math.random()*255).toString(16).toUpperCase();
+        map[numar] = 1;
+        numere += numar + " ";
+    }
+    var guess = document.getElementById("guess").getElementsByTagName("input");
+    var c = 0;
+    for(var i = 0;i < 8; ++i)
+    {
+        if(map[guess[i].value] == 1)
+        {
+            c++;
+        }
+    }
+    numere += "<p>ai nimerit " + c + " numere</p>";
+    document.getElementById("numere").innerHTML = numere;
+}
+
+
+ 

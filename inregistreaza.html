@@ -4,34 +4,33 @@
  
   
   <link href="./css/still.css" type="text/css" rel="stylesheet">
-<title> Despre HTML</title>
+<title>Înregistrare</title>
 <meta charset="utf-8"/>
 </head>
 <body>
 <header>
-<h2><img src="imagini/img1.png" alt="img" width="150" height="150" >Programare web
+  <h2><img  src="imagini/p1.jpg" alt="img" width="70" height="50"  >Programare web
 </h2>
 </header>
 
-<div class="topnav">
-  <a class="active" href="index.html">Acasă</a> 
-  <a href="inregistreaza.html">Înregistrare</a> 
-  <a href="video.html">Video</a>
+<nav>
+  <a href="index.html">Acasă</a> 
+  <a   class="active" href="inregistreaza.html">Înregistrare</a> 
+  <a href="video.html">Video</a> 
   <a href="despre_html.html">Despre</a>  
   <a href="Desen.html">Desen</a>
   <a href="invat_js.html" class="button">Invăț JS</a>
-</div>
-
+</nav>
 
 <h1>Înregistrează-te</h1>
 
 
- <fieldset>
+ <fieldset class="fil">
    
-  <legend>Informatii generale</legend>
+  <legend>Informații generale</legend>
   <label>Nume Utilizator:</label><br>
   <input type="text"><br><br>
-  <label>Parola:</label><br>
+  <label>Paroă:</label><br>
   <input type="password"><br><br>
   <label>Nume:</label><br>
   <input type="text" ><br><br>
@@ -44,7 +43,7 @@
  </fieldset>
  <br>
  <fieldset>
- <legend>Informatii personale</legend><br>
+ <legend>Informații personale</legend><br>
  
  <label>Sexul:</label>
  <select>
@@ -52,32 +51,32 @@
   <option value="masc">Masculin</option>
  </select>
  <br><br>
- <label>Mancare preferata:</label><br>
+ <label>Mâncare preferată:</label><br>
  <input list="mancare">
   <datalist id="mancare">
-    <option value="Salata">
+    <option value="Salată">
     <option value="Burger">
-    <option value="Cartofi prajiti">
-    <option value="Ciorba">
+    <option value="Cartofi prajiți">
+    <option value="Ciorbă">
     <option value="Sarmale">
   </datalist>
  <br><br> 
  
- <label>Culoarea preferata:</label><br>
+ <label>Culoarea preferată:</label><br>
  <input type="color">
  <br><br>
- <label>Data Nasterii:</label><br>
+ <label>Data Nașterii:</label><br>
  <input type="date" id="data">
  <br><br>
- <label>Ora Nasterii:</label><br>
+ <label>Ora Nașterii:</label><br>
  <input type="time">
  <br><br>
-  <label>Varsta :</label><br>
+  <label>Vârstă :</label><br>
   <input type="range" min="0" max="100">
  <br><br>
- <label>Pagina Personala:</label><br>
+ <label>Pagină Personală:</label><br>
  <input type="url" name="pagina personala"><br><br>
- <label>Descriere Personala:</label><br>
+ <label>Descriere Personală:</label><br>
  <textarea id="desc" rows="3" cols="25">
 </textarea>
 </fieldset>
