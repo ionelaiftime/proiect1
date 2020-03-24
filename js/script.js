@@ -63,13 +63,13 @@ function versiunebrowser() {
 
   function loto()
 {
-    var numere = "Numerele castigatoare: ";
+    var text1 = "Numerele castigatoare: ";
     var map = new Map();
     for(var i = 0;i < 8; ++i)
     {
-        var numar = Math.floor(Math.random()*255).toString(16).toUpperCase();
+        var numar = Math.floor(Math.random()*255).toString(16);
         map[numar] = 1;
-        numere += numar + " ";
+        text1 += numar + " ";
     }
     var guess = document.getElementById("guess").getElementsByTagName("input");
     var c = 0;
@@ -80,9 +80,78 @@ function versiunebrowser() {
             c++;
         }
     }
-    numere += "<p>ai nimerit " + c + " numere</p>";
-    document.getElementById("numere").innerHTML = numere;
+    text1 += "<p> ai nimerit " + c + " numere</p>";
+    document.getElementById("numere").innerHTML = text1;
+    
+}
+function reset1() {
+  document.getElementById("guess").reset();
 }
 
 
+
+function desen1() {
+
+
+  var canvas = document.getElementById('canvas'),
+  ctx = canvas.getContext('2d'),
+  rect={ },
+  drag=false;
+
+  function init() {
+    canvas.addEventListener('mousedown', mouseDown, false);
+    canvas.addEventListener('mouseup', mouseUp, false);
+    canvas.addEventListener('mousemove', mouseMove, false);
+  }
+
+  function mouseDown(e) {
+    rect.startX = e.pageX - this.offsetLeft;
+    rect.startY = e.pageY - this.offsetTop;
+    click = true;
+  }
+
+  function mouseUp() {
+    click = false;
+  }
+
+  function mouseMove(e) {
+    if (click) {
+      rect.w = (e.pageX - this.offsetLeft) - rect.startX;
+      rect.h = (e.pageY - this.offsetTop) - rect.startY ;
+      ctx.clearRect(0,0,canvas.width,canvas.height);
+      draw1();
+      draw();
+      
+      
+      
+    }
+  }
+
+
+  function draw() {
+     var color=document.getElementById("favcolor").value;
+    ctx.fillStyle=color;
+  
+    ctx.fillRect(rect.startX, rect.startY, rect.w, rect.h);
+    
+  }
+
+  function draw1() {
+
+    var color2=document.getElementById("favcolor2").value;
+    ctx.strokeStyle=color2;
+    ctx.lineWidth = 10;
+    ctx.strokeRect(rect.startX, rect.startY, rect.w, rect.h);
+
+  }
+
  
+  
+  init();
+
+
+
+
+
+
+};

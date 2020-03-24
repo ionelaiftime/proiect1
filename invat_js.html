@@ -9,11 +9,10 @@
 </head>
 <body>
 <header>
-  <h2><img  src="imagini/p1.jpg" alt="img" width="70" height="50" >
-         Programare web  </h2> 
+  <h2><img  src="imagini/p1.png" alt="img" width="70" height="50" >Programare web  </h2> 
 </header>
 
-<body onload="getDate1(),getTime1(), x = document.getElementById('loc');getLocation(),Browser1(),versiunebrowser(),sistoperare(),geturl() "></body>
+<body onload="getDate1(),getTime1(), x = document.getElementById('loc');getLocation(),Browser1(),versiunebrowser(),sistoperare(),geturl(),desen1()"></body>
 
 
 <nav>
@@ -49,22 +48,36 @@
 <section id="loto">
   <h1>Secțiune loto</h1>
 
-  <div id="numere"><p>Introdu numerele pentru loto:</p></div>
+  <div id="numere"><p>Numere loto:</p></div>
         
-        <div id="guess">
+        <form id="guess">
             <input type="text" pattern="[A-Z0-9]{2}">
             <input type="text" pattern="[A-Z0-9]{2}">
             <input type="text" pattern="[A-Z0-9]{2}">
             <input type="text" pattern="[A-Z0-9]{2}">
+            <input type="text" pattern="[A-Z0-9]{2}"><br><br>
             <input type="text" pattern="[A-Z0-9]{2}">
             <input type="text" pattern="[A-Z0-9]{2}">
             <input type="text" pattern="[A-Z0-9]{2}">
-            <input type="text" pattern="[A-Z0-9]{2}">
-        </div>
-        <input type="button" onclick="loto()" value="Extragere" >
+            <br><br>
+        </form>
+        <input type="button"   onclick="loto()" value="Extragere" >
+        <input type="button" onclick="reset1()" value="Reset" >
 </section>
 
+<section id="desen">
+<br>
+<h1>Secțiune canvas</h1>
 
+<p><input type="color" id="favcolor2" name="favcolor2" ></p>
+<input type="button" onclick="draw1()"value="Culoare contur"> 
+<p><input type="color" id="favcolor" name="favcolor"  > </p>
+<input type="button" onclick="draw()"value="Culoare interior">    
+ 
+<br><br>
+
+<canvas id="canvas" width="500" height="500"></canvas>
+</section>
 
 
 <footer>

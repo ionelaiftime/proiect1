@@ -44,17 +44,19 @@ fieldset{
   height: 3px; 
   }
 
-  div input
+  form input
   {
     border-color: sienna;
     background-color: rgb(180, 176, 149);
-    border: 4px;
-    padding: 14px; 
+    border: 3px;
+    padding: 12px; 
     width: 150px;
     height: 3px;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 
   }
+
+
 
 
 
@@ -211,4 +213,8 @@ fieldset{
   text-align: center;
   line-height: 75px;
   font-size: 30px;
+}
+
+canvas {
+  border:3px solid black;
 }
