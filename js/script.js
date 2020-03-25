@@ -149,9 +149,43 @@ function desen1() {
   
   init();
 
-
-
-
-
-
 };
+
+
+
+
+function v1(){
+
+
+ 
+  
+}
+
+function v2(){
+
+  
+
+  document.getElementsByClassName("stil0")[0].setAttribute("class", "stil1");  
+
+
+}
+
+function v3(){
+
+
+  document.getElementsByClassName("stil1")[0].setAttribute("class", "stil3");
+
+ 
+}
+
+function coloana1(){
+  var table = document.getElementById("tab1");
+  var row = table.insertRow(4);
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  var cell3 = row.insertCell();
+  cell1.innerHTML = "";
+  cell2.innerHTML = "";
+  cell3.innerHTML = "";
+}
+

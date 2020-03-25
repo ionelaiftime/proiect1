@@ -35,7 +35,7 @@ fieldset{
   font-size: 20 px;
 }
 
-  .fil input {
+.fil input {
 
   border-radius: 25px;
   border: 2px solid #73AD21;
@@ -133,7 +133,7 @@ fieldset{
     nav a{
         display: block;
     }
-}
+ }
 
 
 
@@ -217,4 +217,94 @@ fieldset{
 
 canvas {
   border:3px solid black;
+}
+
+
+.stil0 {
+  flex: 10%;
+  padding: 2px;
+
+}
+
+@media screen and (max-width: 700px) {
+  .stil0{
+      display: flex;
+  }
+}
+
+
+.stil1 {
+  display: flex;
+  flex: 10%;
+  padding: 2px;
+
+}
+
+@media screen and (max-width: 700px) {
+  .stil1{
+      display: flex;
+     
+   
+  }
+}
+
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 10%;
+  padding: 2px;
+
+}
+
+.column2 {
+  flex: 10%;
+  padding: 2px;
+
+}
+
+/* Clear floats after the columns */
+
+.stil3 {
+  display: inline-grid;
+  grid-template-columns: 700px 700px ;
+  grid-gap: 10px;
+  color: #444;
+
+}
+
+
+@media screen and (max-width: 800px) {
+  .stil3{
+      display: inline-grid;
+      
+    
+
+  }
+}
+
+body {
+  margin: 40px;
+}
+
+
+
+
+#tab1 {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 300px;
+  
+}
+
+#tab1 td, #tab1 th {
+  border: 1px solid #ddd;
+  padding: 15px;
+
+}
+
+#tab1 th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+
+
 }
