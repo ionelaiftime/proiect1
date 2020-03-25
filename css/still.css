@@ -237,6 +237,7 @@ canvas {
   display: flex;
   flex: 10%;
   padding: 2px;
+ 
 
 }
 
@@ -268,16 +269,17 @@ canvas {
   grid-template-columns: 700px 700px ;
   grid-gap: 10px;
   color: #444;
-
+  width: fit-content;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
 }
+
 
 
 @media screen and (max-width: 800px) {
   .stil3{
       display: inline-grid;
-      
-    
-
+      width: fit-content;
   }
 }
 
