@@ -149,31 +149,15 @@ function desen1() {
 
 };
 
-function t(nr){
-
-  var i =document.getElementsById("id1").getElementsByTagName('div');
-  
-      i.setAttribute("class","stil"+nr);
-
-
-
-}
   
 
-function v1(){
+function v1(nr){
 
-  document.getElementsByClassName("stil3")[0].setAttribute("class", "stil0");
+  document.getElementById("content").setAttribute("class","stil"+nr);
 
 }
 
 
-function v2(){
-  document.getElementsByClassName("stil0")[0].setAttribute("class", "stil1");  
-}
-
-function v3(){
-  document.getElementsByClassName("stil1")[0].setAttribute("class", "stil3");
-}
 
 
 
