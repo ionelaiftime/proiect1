@@ -69,11 +69,11 @@ function versiunebrowser() {
         map[numar] = 1;
         text1 += numar + " ";
     }
-    var guess = document.getElementById("guess").getElementsByTagName("input");
+    var loto1 = document.getElementById("loto1").getElementsByTagName("input");
     var c = 0;
     for(var i = 0;i < 8; ++i)
     {
-        if(map[guess[i].value] == 1)
+        if(map[loto1[i].value] == 1)
         {
             c++;
         }
@@ -83,7 +83,7 @@ function versiunebrowser() {
     
 }
 function reset1() {
-  document.getElementById("guess").reset();
+  document.getElementById("loto1").reset();
 }
 
 

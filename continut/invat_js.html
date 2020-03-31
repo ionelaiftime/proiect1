@@ -25,14 +25,14 @@
 </nav>
 
 <aside>
-  <input type="button"  onclick="v1(0)" value="stil0" >
-  <input type="button"  onclick="v1(1)"  value="stil1" >
-  <input type="button"  onclick="v1(3)"  value="stil2" >
+  <input type="button" class="stiluri" onclick="v1(0)" value="stil0" >
+  <input type="button" class="stiluri"  onclick="v1(1)"  value="stil1" >
+  <input type="button" class="stiluri"  onclick="v1(3)"  value="stil2" >
 
 </aside>
 
 <div class="stil0" id="content">
-  <div class="column2" style="border-style: solid;border-color: tomato;">
+  <div class="column1" >
     <section id="informatii">
       <h1>Secțiune informativă</h1>
     
@@ -47,13 +47,13 @@
     
     
   </div>
-  <div class="column2" style="border-style: solid;border-color: blueviolet;">
+  <div class="column2" >
     <section id="loto">
       <h1>Secțiune loto</h1>
     
       <div id="numere"><p>Numere loto:</p></div>
             
-            <form id="guess">
+            <form id="loto1">
                 <input type="text" pattern="[A-Z0-9]{2}"><br><br>
                 <input type="text" pattern="[A-Z0-9]{2}"><br><br>
                 <input type="text" pattern="[A-Z0-9]{2}"><br><br>
@@ -68,7 +68,7 @@
             <input type="button" onclick="reset1()" value="Reset" >
     </section>
   </div>
-  <div class="column2" style="border-style: solid;border-color: black;">
+  <div class="column3" >
     <section id="desen">
       <h1>Secțiune canvas</h1>
       
@@ -83,7 +83,7 @@
       
       </section >
   </div>
-    <div class="column2" style="border-style: solid;border-color: green;">
+    <div class="column4" >
     <section>
 
       <h1>Secțiune tabel</h1>
@@ -94,7 +94,7 @@
       <input type="button"  onclick="linie1()"  value="Inserare linie" >
       <input type="button"  onclick="coloana1()"  value="Inserare coloana" >
 
-      <table  id ="tab1">
+      <table  class ="tab1">
         <tr>
           <th>Firstname</th>
           <th>Lastname</th> 
