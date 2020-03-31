@@ -1,5 +1,5 @@
 import socket
-
+import os
 # creeaza un server socket
 serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 # specifica ca serverul va rula pe portul 5678, accesibil de pe orice ip al serverului
@@ -28,7 +28,24 @@ while True:
 			break
 	print 'S-a terminat cititrea.'
 
-	# TODO interpretarea sirului de caractere `linieDeStart` pentru a extrage numele resursei cerute
-	# TODO trimiterea răspunsului HTTP
+	input1=linieDeStart.split(' ')[1]
+	print input1
+	rasp = ''
+	if os.path.exists("../continut"+str(input1)):
+		rasp+='HTTP/1.1 200 OK\r\n'
+		rasp+='Content length: '+str(14+len(input1))+'\r\n'
+	else:
+		rasp+='HTTP/1.1 484 Not Found\r\n'
+	rasp+='Server: MyHost \r\n'	
+	rasp+='Content-Type: text/html\r\n'
+	rasp+='Connection: close\r\n'
+
+	rasp+='\r\n'
+	if os.path.exists("../continut"+str(input1)):
+		rasp+='Hello Word - '+ input1
+
+
+		
+	clientsocket.sendall(bytes(rasp))
 	clientsocket.close()
 	print 'S-a terminat comunicarea cu clientul.'

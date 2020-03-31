@@ -158,17 +158,28 @@ function v1(nr){
 }
 
 
-
+function linie1(){
+  var color=document.getElementById("favcolor3").value;
+    var table = document.getElementById('tabledis');
+    var x = table.insertRow(0);
+  var e =table.rows.length-1;
+  var l =table.rows[e].cells.length;
+  for (var c =0,  m=l; c < m; c++) {
+    table.rows[0].insertCell(c);
+    table.rows[0].cells[c].innerHTML  = "&nbsp;&nbsp;";
+    table.rows[0].cells[c].style.background=color;
+  }
+}
 
 
 function coloana1(){
-  var table = document.getElementById("tab1");
-  var row = table.insertRow(4);
-  var cell1 = row.insertCell(0);
-  var cell2 = row.insertCell(1);
-  var cell3 = row.insertCell();
-  cell1.innerHTML = "";
-  cell2.innerHTML = "";
-  cell3.innerHTML = "";
+  var color=document.getElementById("favcolor3").value;
+  var table = document.getElementById('tabledis');
+  for (var r = 0, n = table.rows.length; r < n; r++) {
+        table.rows[r].insertCell(0);
+        table.rows[r].cells[0].innerHTML =  "&nbsp;&nbsp;" ;
+        table.rows[r].cells[0].style.background=color;
+        }
 }
+
 
