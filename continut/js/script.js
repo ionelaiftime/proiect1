@@ -1,3 +1,5 @@
+
+
 function getDate1(){
     var dt=new Date();
       document.getElementById("showdate").innerHTML= dt.toLocaleDateString();
@@ -153,7 +155,7 @@ function desen1() {
 
 function v1(nr){
 
-  document.getElementById("content").setAttribute("class","stil"+nr);
+  document.getElementById("content1").setAttribute("class","stil"+nr);
 
 }
 
