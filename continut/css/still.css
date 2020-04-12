@@ -1,7 +1,8 @@
 
 
   body {
-   color:rgb(0, 0, 0);
+   
+    color:rgb(0, 0, 0);
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color:beige;
@@ -339,3 +340,41 @@ body {
 
 
 }
+
+/* Persoane*/
+
+#demo1 {
+  background-color: #f3efed;
+  border: 3px solid purple;
+}
+
+#demo1 td, #demo1 th {
+  border: 1px solid purple;
+  padding: 15px;}
+
+
+  /*verifica*/
+
+  #txt1{
+    
+    border-radius: 150px;
+    border: 2px solid black;
+    padding: 5px;
+    
+
+  }
+
+  #txt2{
+    border-radius: 150px;
+    border: 2px solid black;
+    padding: 5px;
+  }
+
+  #but{
+    display: inline-block;
+    padding: 10px 20px;
+    color: rgb(230, 227, 223);
+    background-color: rgb(71, 55, 3);
+    border-radius: 10px;
+  
+  }

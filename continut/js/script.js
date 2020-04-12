@@ -187,15 +187,33 @@ function coloana1(){
 
 
 
-
-
-
-function schimbaContinut(res)
+function schimbaContinut(res,jsFisier,jsFunctie)
 {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
      document.getElementById("continut").innerHTML = this.responseText;
+     if (jsFisier) 
+      {
+        var elementScript = document.createElement('script');
+        elementScript.onload = function () 
+        {
+          console.log("hello");
+          if (jsFunctie) 
+          {
+            window[jsFunctie]();
+          }
+        };
+      elementScript.src = jsFisier;
+      document.head.appendChild(elementScript);
+      } 
+      else 
+      {
+        if (jsFunctie) 
+        {
+          window[jsFunctie]();
+        }
+      }
      
     }
   };
@@ -204,3 +222,29 @@ function schimbaContinut(res)
 
 
 };
+
+function Run1()
+{
+
+  {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function()
+    {
+      if(this.readyState == 4 && this.status == 200)
+      { 
+        var text1 = document.getElementById("txt1").value;
+        var text2 = document.getElementById("txt2").value;
+        var obiect = JSON.parse(this.responseText);
+        if(text1==obiect[0].utilizator && text2==obiect[0].parola)
+          document.getElementById("demo").innerHTML = "Valorile exista";
+          else
+          document.getElementById("demo").innerHTML = "Valorile nu exista";
+      }
+    };
+
+    xmlhttp.open("GET","resurse/utilizatori.json",true);
+    xmlhttp.send();
+
+  
+  }
+}  

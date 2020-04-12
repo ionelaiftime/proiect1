@@ -1,0 +1,44 @@
+<persoane>
+    <persoana id="1">
+        <nume>Popescu</nume>
+        <prenume>Ion</prenume>
+        <varsta>23</varsta>
+        <telefon>0765835382</telefon>
+        <email>popescuion@gmail.com</email>
+        <adresa>
+            <strada>Strada Florilor</strada>
+            <numar>Număr 9</numar>
+            <localitate>Localitate Iasi</localitate>
+            <judet>Judet Iași</judet>
+            <tara>Țara România</tara>
+        </adresa>
+    </persoana>
+    <persoana id="2">
+        <nume>Tiron</nume>
+        <prenume>Maria</prenume>
+        <varsta>21</varsta>
+        <telefon>0758375731</telefon>
+        <email>tironmaria@gmail.com</email>
+        <adresa>
+            <strada>Strada Mărului</strada>
+            <numar>Număr 345</numar>
+            <localitate>Localitate Tansa</localitate>
+            <judet>Județ Iași</judet>
+            <tara>Țara România</tara>
+        </adresa> 
+    </persoana>
+    <persoana id="3">
+        <nume>Vămanu</nume>
+        <prenume>Andreea</prenume>
+        <varsta>30</varsta>
+        <telefon>0734928473</telefon>
+        <email>vămanuandreea@gmail.com</email>
+        <adresa>
+            <strada>Strada Libertatii</strada>
+            <numar>Număr 45</numar>
+            <localitate>Localitate Crângu</localitate>
+            <judet>Județ Pașcani</judet>
+            <tara>Țara România</tara>
+        </adresa>
+    </persoana>
+</persoane>
