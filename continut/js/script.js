@@ -1,20 +1,33 @@
 
+class Produs
+{
+  constructor(id,numeprodus,cantitate)
+  {
+    this.id=id;
+    this.numeprodus=numeprodus;
+    this.cantitate=cantitate;
+  
+  }
+
+}
+
+function info()
+{
+  getDate1();
+  setInterval(getDate1, 1000);
+
+}
 
 function getDate1(){
     var dt=new Date();
-      document.getElementById("showdate").innerHTML= dt.toLocaleDateString();
+    document.getElementById("datetime").innerHTML = dt;
 }
 
 
-var myVar = setInterval(getTime1, 1000);
-
-function getTime1(){
-    var dt = new Date();
-    document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
-}
 
 
 function getLocation() {
+  var x=navigator;
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
   } else { 
@@ -23,6 +36,7 @@ function getLocation() {
 }
 
 function showPosition(position) {
+  var x=position;
   x.innerHTML = "Latitude: " + position.coords.latitude + 
   "<br>Longitude: " + position.coords.longitude;
 }

@@ -69,7 +69,7 @@ nav a.active {
 
  article{
   font-size: 20px;
-
+  
  }
 
  /*inreg*/
@@ -377,4 +377,34 @@ body {
     background-color: rgb(71, 55, 3);
     border-radius: 10px;
   
+  }
+
+  /*cumparaturi*/
+
+  #cumparat {
+    background-color: #f3efed;
+    border: 3px solid crimson;
+    width:70%; 
+    margin-left:15%; 
+    margin-right:15%;
+  }
+  
+  #cumparat td, #cumparat th {
+    border: 1px solid crimson;
+    padding: 15px;}
+
+  #add
+  {
+    display: inline-block;
+    padding: 10px 20px;
+    color: rgb(230, 227, 223);
+    background-color: rgb(135, 8, 8);
+    border-radius: 12px;
+  }
+
+  #cumparaturi{
+    
+    width:70%; 
+    margin-left:15%; 
+    margin-right:15%;
   }
